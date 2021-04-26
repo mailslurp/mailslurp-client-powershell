@@ -1,0 +1,25 @@
+# CreateWebhookOptions
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**BasicAuth** | [**BasicAuthOptions**](BasicAuthOptions) |  | [optional] 
+**Name** | **String** | Optional name for the webhook | [optional] 
+**Url** | **String** | Public URL on your server that MailSlurp can post WebhookNotification payload to when an email is received. The payload of the submitted JSON is described by https://api.mailslurp.com/schemas/webhook-payload | [optional] 
+
+## Examples
+
+- Prepare the resource
+```powershell
+$CreateWebhookOptions = Initialize-maislurp-client-powershellCreateWebhookOptions  -BasicAuth null `
+ -Name null `
+ -Url null
+```
+
+- Convert the resource to JSON
+```powershell
+$CreateWebhookOptions | ConvertTo-JSON
+```
+
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
