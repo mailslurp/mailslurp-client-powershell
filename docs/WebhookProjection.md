@@ -1,0 +1,33 @@
+# WebhookProjection
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Name** | **String** |  | [optional] 
+**Id** | **String** |  | [optional] 
+**UpdatedAt** | **System.DateTime** |  | [optional] 
+**Url** | **String** |  | [optional] 
+**InboxId** | **String** |  | [optional] 
+**EventName** | **String** |  | [optional] 
+**CreatedAt** | **System.DateTime** |  | [optional] 
+
+## Examples
+
+- Prepare the resource
+```powershell
+$WebhookProjection = Initialize-maislurp-client-powershellWebhookProjection  -Name null `
+ -Id null `
+ -UpdatedAt null `
+ -Url null `
+ -InboxId null `
+ -EventName null `
+ -CreatedAt null
+```
+
+- Convert the resource to JSON
+```powershell
+$WebhookProjection | ConvertTo-JSON
+```
+
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
